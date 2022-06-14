@@ -7,7 +7,7 @@
     "test": "jest --runInBand",
     "build": "babel src --out-dir dist --copy-files",
     "start": "babel src --out-dir dist --copy-files && node dist/index.js",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage --runInBand"
   },
   "author": "Francisco Cabezas",
   "license": "ISC",

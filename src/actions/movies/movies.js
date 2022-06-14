@@ -18,7 +18,7 @@ exports.getMoviesByClassifier = (classifier, order) => {
     let orderSign = getOrderParam(order)
     const movies = exports.getAllMovies()
 
-    if (!classifierField || !orderSign) return
+    if (!classifierField || !orderSign) return null //se edito para que cuando no encuentre el classifier o el order retorne null
 
     const orderedMovies = movies.sort(
         (A, B) => {
